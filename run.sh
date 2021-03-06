@@ -1,9 +1,9 @@
 #!/bin/bash
 
-IMAGE_NAME=teamsprint/metatron:3.4.0
+IMAGE_NAME=hdispo/metatron:3.4.0
 CONTAINER_NAME=metatron
 
-sudo docker run -d -it --name $CONTAINER_NAME --memory="4g" \
+sudo docker run -d -it --name $CONTAINER_NAME  \
            -p 18088:8088 \
            -p 18042:8042 \
            -p 18081:8081 \
